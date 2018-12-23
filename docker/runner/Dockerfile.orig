@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 LABEL version="1.2"
 
 MAINTAINER Alexey Manikin <alexey@beget.ru>
@@ -14,12 +14,11 @@ RUN \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
-  apt-get install --no-install-recommends -qq -y git build-essential cron libpython2.7 python-minimal\
+  apt-get install --no-install-recommends -qq -y git build-essential cron libpython2.7 python python-pip \
                     python-all-dev python-subnettree \
-                    python-mysqldb python-psutil && \	
-  apt-get update && apt-get install -y python-pip  && \
+                    python-mysqldb python-psutil && \
   pip install dnspython && \
-  pip install --upgrade psutil && \		
+  pip install --upgrade psutil && \
   apt-get clean && \
   rm -rf /etc/localtime && \
   ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime && \
