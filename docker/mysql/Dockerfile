@@ -35,7 +35,7 @@ RUN addgroup --gid 950 mysql || true
 RUN adduser --quiet --system --disabled-login --no-create-home --uid 950 --gid 950  mysql || true
 
 RUN cd /root/ && \
-    git clone -n https://github.com/AlexeyManikin/domain_statistic.git --depth 1 && \
+    git clone -n https://github.com/akmua/domain_statistic.git --depth 1 && \
     cd domain_statistic && \
     git checkout HEAD structure.sql && \
     cp /root/domain_statistic/structure.sql /root/structure.sql && \
