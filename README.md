@@ -17,7 +17,7 @@
 устанавливаем Docker и git
 
 * sudo apt-get update 
-* sudo apt-get install docker.io git
+* sudo apt-get install docker.io git docker-compose
 
 Скачиваем репозиторий
 
