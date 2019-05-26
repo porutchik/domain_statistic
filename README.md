@@ -22,7 +22,7 @@
 Скачиваем репозиторий
 
 * cd /home
-* git clone https://github.com/akmua/domain_statistic.git
+* git clone https://github.com/porutchik/domain_statistic.git
 
 Собираем образы
 
