@@ -17,12 +17,12 @@
 устанавливаем Docker и git
 
 * sudo apt-get update 
-* sudo apt-get install docker.io git
+* sudo apt-get install docker.io git docker-compose
 
 Скачиваем репозиторий
 
 * cd /home
-* git clone https://github.com/akmua/domain_statistic.git
+* git clone https://github.com/porutchik/domain_statistic.git
 
 Собираем образы
 
